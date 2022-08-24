@@ -33,6 +33,7 @@ jobs:
         git config --global user.email "901akhil@gmail.com"
         git config --global user.name "avvaruakhil"
         git clone "https://github.com/avvaruakhil/demo.git"
+        git config pull.rebase false
         git fetch
         git checkout main
         git pull
@@ -40,6 +41,6 @@ jobs:
         git checkout testing
         git pull origin main --allow-unrelated-histories
         git push
-        #git merge main
+        git merge main
         #git commit -I "a commit by github actions on develop"
         #git push
