@@ -37,7 +37,7 @@ jobs:
         git checkout main
         git pull
         git push
-        git checkout develop
+        git checkout testing
         git pull
         git push
         git merge master
