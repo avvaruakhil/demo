@@ -28,3 +28,18 @@ jobs:
     - name: Run Tests
       run: |
         python hellow.py test
+    - name: Merge Branch
+      run: |
+        git config --global user.email "901akhil@gmail.com"
+        git config --global user.name "avvaruakhil"
+        git clone "https://github.com/avvaruakhil/demo.git"
+        git fetch
+        git checkout main
+        git pull
+        git push
+        git checkout develop
+        git pull
+        git push
+        git merge master
+        #git commit -I "a commit by github actions on develop"
+        #git push
