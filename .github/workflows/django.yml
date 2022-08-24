@@ -40,6 +40,6 @@ jobs:
         git checkout testing
         git pull
         git push
-        #git merge master
+        git merge main
         #git commit -I "a commit by github actions on develop"
         #git push
