@@ -41,7 +41,7 @@ jobs:
         git checkout testing
         git pull origin main --allow-unrelated-histories
         git mergetool
-        #git push
-        #git merge main
+        git push
+        git merge
         #git commit -I "a commit by github actions on develop"
         #git push
