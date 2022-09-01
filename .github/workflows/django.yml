@@ -43,5 +43,6 @@ jobs:
         git mergetool
         git push
         git merge main
+        python manage.py collectstatic --noinput
         #git commit -I "a commit by github actions on develop"
         #git push
